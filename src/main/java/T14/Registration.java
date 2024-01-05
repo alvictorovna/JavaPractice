@@ -9,6 +9,11 @@ public class Registration {
     private String userName;
     private String password;
 
+    public Registration(String email, String userName, String password) {
+        setUserName(userName);
+        setEmail(email);
+        setPassword(password);
+    }
 
     public String getEmail() {
         return email;
@@ -47,15 +52,10 @@ public class Registration {
 
 class TestRegistration{
     public static void main(String[] args) {
-        Registration registration = new Registration();
+        Registration registration = new Registration("alesia@yahoo.com", "Alesia Sushchyk", "1234567");
 
-        registration.setEmail("alesia@yahoo.com");
         //registration.setEmail("alesia@gmail.com");
-
-        registration.setUserName("Alesia Sushchyk");
         //registration.setUserName("Alesia");
-
-        registration.setPassword("1234567");
         //registration.setPassword("Alesia Sushchyk");
     }
 }
