@@ -21,6 +21,7 @@ class A extends Marks{
 
     @Override
     float getPercentage() {
+
         return ((float) (mathMark + languageMark + biologyMark + chemMark) / 400)  * 100;
     }
 }
@@ -38,6 +39,7 @@ class B extends Marks{
 
     @Override
     float getPercentage() {
+
         return ((float) (mathMark + languageMark + biologyMark) / 300)  * 100;
     }
 }
@@ -48,6 +50,7 @@ class TestMarks{
         Marks[] marks = {new A(50,70,100,30), new B(30,60,80)};
         for (Marks m: marks) {
             System.out.println("Average percentage of marks: " + m.getPercentage());
+            System.out.println();
         }
     }
 

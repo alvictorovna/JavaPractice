@@ -13,13 +13,7 @@ public class T5 {
         Arrays.sort(charsArray);
         Arrays.sort(charsArray1);
 
-        for(int i = 0; i < charsArray.length; i++){
-            if(charsArray[i] != charsArray1[i]){
-                return false;
-            }
-        }
-
-        return true;
+        return Arrays.equals(charsArray, charsArray1);
     }
     public static void main(String[] args) {
 

@@ -31,7 +31,7 @@ public class Registration {
     }
 
     public void setPassword(String password) {
-        if(password.length()>6 && !password.equalsIgnoreCase(userName)){
+        if(password.length()>6 && !password.contains(userName)){
             this.password = password;
         } else throw new IllegalArgumentException();
 
